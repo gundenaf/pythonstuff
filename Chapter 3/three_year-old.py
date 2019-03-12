@@ -5,7 +5,7 @@ print("\t\tДобро пожаловать в программу 'Симулят
 print("Имитируется разговор с маленьким ребёнком.")
 print("Попробуйте остановить этот кошмар.\n")
 response: str = ""
-while response != "Потому что.":
+while response != "Потому что":
     response = str(input("Почему?\n"))
 print("А, ладно.")
 input("\n\nHaжмитe Enter. чтобы выйти.")
