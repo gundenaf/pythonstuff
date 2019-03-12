@@ -10,3 +10,4 @@ while response != "Потому что":
 print("А, ладно.")
 input("\n\nHaжмитe Enter. чтобы выйти.")
 
+
