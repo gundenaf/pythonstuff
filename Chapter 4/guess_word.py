@@ -15,6 +15,10 @@ while count > 0:
             print("Вы угадали слово!")
             break
         count -= 1
+        print("У вас осталось %d попыток" % count)
+    else:
+        count -= 1
+        print("У вас осталось %d попыток" % count)
     if count == 0:
         print("Попытки закончились.")
 input("\nНажмите Enter, чтобы выйти.")
