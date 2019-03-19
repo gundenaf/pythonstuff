@@ -4,7 +4,7 @@
 scores = []
 choice = None
 
-while choice != "00":
+while choice != "0":
     print(
     """
     Рекорды

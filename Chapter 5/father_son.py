@@ -22,6 +22,7 @@ while choice != "0":
     choice = input("Ваш выбор: \n")
     if choice == "0":
         print("До свидания.")
+        input("\n\nHaжмитe Enter. чтобы выйти.")
     elif choice == "1":
         son = input("Введите имя сына ")
         if son in father:
@@ -54,5 +55,3 @@ while choice != "0":
             print("\nНичем не могу помочь, такого отца", son, "нет в списке")
     else:
         print("Извините, в меню нет такого пункта", choice)
-
-input("\n\nHaжмитe Enter. чтобы выйти.")
