@@ -5,7 +5,7 @@ father = {"Сергей": "Юрий Сергеевич",
           "Алексей": "Святослав Алексеевич",
           "Иван": "Сергей Иванович",
           "Роман": "Егор Романович",
-         }
+          }
 
 choice = None
 while choice != "0":
@@ -25,23 +25,23 @@ while choice != "0":
     elif choice == "1":
         son = input("Введите имя сына ")
         if son in father:
-            definition = father[son]
-            print("\n", son, "сын", definition)
+            couple = father[son]
+            print("\n", son, "сын", couple)
         else:
             print("\nУвы, мы не можем найти отца по имени сына:", son)
     elif choice == "2":
         son = input("Добавьте отца по имени сына ")
         if son not in father:
-            definition = input("\nВпишите имя и отчество отца ")
-            father[son] = definition
+            couple = input("\nВпишите имя и отчество отца ")
+            father[son] = couple
             print("\nОтец", son, "добавлен в список")
         else:
             print("\nУвы, мы не можем найти отца по имени сына:", son)
     elif choice == "3":
         son = input("Впишите имя сына для изменения имени отца ")
         if son in father:
-            definition = input("Впишите имя и отчество отца ")
-            father[son] = definition
+            couple = input("Впишите имя и отчество отца ")
+            father[son] = couple
             print("\nДанные по отцу", son, "изменены.")
         else:
             print("\nТакого отца пока нет! Попробуйте добавить его в список.")
@@ -56,4 +56,3 @@ while choice != "0":
         print("Извините, в меню нет такого пункта", choice)
 
 input("\n\nHaжмитe Enter. чтобы выйти.")
-
